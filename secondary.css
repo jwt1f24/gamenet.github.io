@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(25, 0, 90);
+    font-family: 'Trebuchet MS';
+}
+
+hr {
+    margin: 40px 80px 30px 80px;
+}
+
+
+
+/*Navigation Bar*/
+div.nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav a.logo {
+    font-size: 115%;
+}
+
+div.nav a {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 18px 20px;
+    float: left;
+    display: block;
+}
+
+div.nav a:hover {
+    color: rgb(200, 200, 200);
+}
+div.nav a.logo {
+    color: white;
+}
+
+
+
+/* Responsive Layout */
+@media (max-width: 400px) {
+    div.nav a {
+        width: 100%;
+        float: none;
+        font-size: 0.6rem
+    }
+
+    .footer a {
+        font-size: 0.6rem;
+        margin: 10px;
+        float: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav a, .footer a{
+        font-size: 0.8rem;
+    }
+    .nav a.logo, .footer a.logo{
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Caption */
+div.title {
+    color: white;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+div.title p.pg {
+    margin-top: 10px;
+    color: rgb(200, 200, 200);
+}
+
+
+
+/* Top Col */
+div.top {
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+    background-color: rgb(20, 0, 60);
+    padding: 0;
+}
+
+.top img {
+    width: 100%;
+    height: 500px;
+}
+
+.top a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.top:hover {
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Left Col */
+.lcol {
+    float: left;
+    margin-left: 80px;
+    width: 60%;
+}
+
+.lcol .box img {
+    width: 100%;
+    height: 300px;
+}
+
+.lcol .box {
+    background-color: rgb(20, 0, 60);
+    color: white;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.lcol .box a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lcol .box:hover {
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+/* Right Col */
+.rcol {
+    color: white;
+    float: right;
+    margin-right: 80px;
+    width: 25%;
+}
+
+.rcol .box img {
+    width: 100%;
+    height: 180px;
+}
+
+.rcol .box {
+    background-color: rgb(20, 0, 60);
+    color: white;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.rcol .box a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rcol .box:hover {
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Footer */
+.foot {
+    padding: 50px 40px 40px 40px;
+    text-align: center;
+    background: #1f1f1f;
+    margin-top: 80px;
+}
+
+.foot .logo {
+    font-size: 300%;
+}
+
+.foot a {
+    color: white;
+    text-decoration: none;
+    padding: 0 80px 0 80px;
+}
+
+.foot a {
+    color: rgb(200, 200, 200);
+}
+.foot a:hover {
+    color: rgb(155, 155, 155);
+}
+.foot a:active {
+    color: gray;
+}
+
+.foot hr {
+    margin-top: 50px;
+}
+
+.foot p {
+    color: white;
+    margin-top: 40px;
+}
