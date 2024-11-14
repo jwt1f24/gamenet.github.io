@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(25, 0, 90);
+    font-family: 'Trebuchet MS';
+}
+
+
+
+/*Navigation Bar*/
+div.nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav a.logo {
+    font-size: 115%;
+}
+
+div.nav a {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 18px 20px;
+    float: left;
+    display: block;
+}
+
+div.nav a:hover {
+    color: rgb(200, 200, 200);
+}
+div.nav a.logo {
+    color: white;
+}
+
+
+
+/* Responsive Layout */
+@media (max-width: 400px) {
+    div.nav a, .footer a {
+        width: 100%;
+        float: none;
+        font-size: 0.6rem
+    }
+}
+
+@media (max-width: 700px) {
+    .nav a, .footer a {
+        font-size: 0.8rem;
+    }
+    .nav a.logo, .footer a.logo {
+        font-size: 1rem;
+    }
+    .hd {
+        margin: 0;
+    }
+    .cbox .nrg p {
+        font-size: 0.8rem;
+        padding-left: 15rem;
+        padding-bottom: 10rem;
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+
+/*Title Head*/
+.hd h1 {
+    color: white;
+    text-align: center;
+    font-size: 500%;
+    padding-top: 30px;
+}
+.hd p {
+    color: rgb(225, 225, 225);
+    text-align: center;
+    font-size: 120%;
+}
+
+
+.hlink {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid #ffffff50;
+    border-radius: 20px;
+    margin: 20px 40% 20px 40%;
+    padding: 10px;
+    width: 20%;
+    cursor: pointer;
+}
+
+.hlink a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.hlink p {
+    color: white;
+}
+
+.hlink:hover {
+    background-color: rgba(175, 175, 175, 0.35);
+}
+
+.hlink:active {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* News, Reviews, and Guides */
+.cbox {
+    margin: 50px;
+    padding: 20px;
+}
+
+.cbox:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nrg {
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    margin: 100px 40px 0 40px;
+}
+
+.nrg h1 {
+    color: white;
+    font-size: 300%;
+    margin: 15px 0 15px 0;
+}
+
+.nrg p {
+    color: rgb(225, 225, 225);
+    font-size: 105%;
+    padding: 0 300px 0 300px;
+}
+
+
+/* Learn More Button */
+.hl {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid #ffffff85;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 40px 40% 40px 40%;
+    width: 20%;
+    cursor: pointer;
+}
+
+.hl a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.hl:hover {
+    background-color: rgba(135, 135, 135, 0.5);
+}
+
+.hl:active {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+
+
+
+
+/*Upcoming Games*/
+div.ug {
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+/* Left */
+.uglg {
+    float: left;
+    margin-left: 80px;
+    width: 56%;
+}
+
+.uglg .box img {
+    width: 100%;
+    height: 500px;
+}
+
+.uglg .box {
+    background-color: rgb(20, 0, 60);
+    color: white;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.uglg .box a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.uglg .box:hover {
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Right */
+.ugrg {
+    float: right;
+    margin-right: 80px;
+    width: 30%;
+}
+
+.ugrg .box img {
+    width: 100%;
+    height: 223px;
+}
+
+.ugrg .box {
+    background-color: rgb(20, 0, 60);
+    color: white;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.ugrg .box a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ugrg .box:hover {
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* UG Button */
+.ugb {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 40%;
+    width: 20%;
+    cursor: pointer;
+}
+
+.ugb a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ugb:hover {
+    background-color: rgba(153, 153, 153, 0.25);
+}
+
+.ugb:active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Footer */
+.foot {
+    padding: 50px 40px 40px 40px;
+    text-align: center;
+    background: #1f1f1f;
+    margin-top: 80px;
+}
+
+.foot .logo {
+    font-size: 300%;
+}
+
+.foot a {
+    color: white;
+    text-decoration: none;
+    padding: 0 80px 0 80px;
+}
+
+.foot a {
+    color: rgb(200, 200, 200);
+}
+.foot a:hover {
+    color: rgb(155, 155, 155);
+}
+.foot a:active {
+    color: gray;
+}
+
+.foot hr {
+    margin-top: 50px;
+}
+
+.foot p {
+    color: white;
+    margin-top: 40px;
+}
